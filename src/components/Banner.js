@@ -1,11 +1,12 @@
 import React from 'react';
-import $ from "jquery";
+// import $ from "jquery";
+
 const Banner = () => {
 
-  const expandMore = e => {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: ($("#about-me").offset().top) }, 1000);
-  }
+  // const expandMore = e => {
+  //   e.preventDefault();
+  //   $("html, body").animate({ scrollTop: ($("#about-me").offset().top) }, 1000);
+  // }
 
   window.onscroll = () => {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -21,7 +22,7 @@ const Banner = () => {
       style={{
         width: '100%',
         height: '100vh',
-        backgroundImage: "url('https://images.unsplash.com/photo-1456996290209-634ae6b8be31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -30,7 +31,7 @@ const Banner = () => {
       }}
     >
       <div
-        style={{ position: 'fixed' }}
+        style={{ position: 'fixed', zIndex: '100' }}
         className="col-md-12 p-4 text-white" id="nav">
         <div className="container">
           <div className="row">
@@ -49,19 +50,18 @@ const Banner = () => {
         }}
         className="col-md-12 text-center">
         <h1 style={{ fontSize: '4.2em', letterSpacing: '20px' }} className="text-white col-md-12">ANGEL ZEPEDA</h1>
-        <h5 className="text-white">Ingeniero en computación, entusiasta por el software y desarrollo web</h5>
+        <h4 className="text-white">Ingeniero en computación, entusiasta por el software y desarrollo web</h4>
       </div>
 
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           top: '85%',
         }}
         className="col-md-12 text-center">
         <h4 className="text-white">CONOCER MAS</h4>
-        <button onClick={expandMore} className="btn"><i className="material-icons">expand_more</i></button>
-
-      </div>
+        <button onClick={expandMore} className="btn btn-link"><i className="material-icons">expand_more</i></button>
+      </div> */}
     </div>
   );
 }
