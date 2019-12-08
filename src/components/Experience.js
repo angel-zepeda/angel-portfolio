@@ -1,7 +1,8 @@
 import React from 'react';
 import phone from '../phone.png';
 import pc from '../macbookpro.png';
-
+import chat1 from '../2.png';
+import chat2 from '../3.png';
 const Experience = () => {
   return (
     <div className="container mt-5" id="software">
@@ -53,19 +54,21 @@ const Experience = () => {
               </ul>
             </ul>
             <div className="row">
-              <div className="col-md-6">
-                <img src={pc} width="512" height="270" />
+              <div className="col-md-6 col-xs-12">
+                <img src={pc} width="100%" height="270" />
               </div>
               <div className="col-md-6">
-                <img src={pc} width="512" height="270" />
+                <img src={pc} width="100%" height="270" />
               </div>
             </div>
           </div>
         </div>
-        <div className="text-right">
-          <p>Github: </p>
+        <div className="text-right mt-2">
+          <p>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="32" height="32" />
+            <a target="_blank" href="https://github.com/angel-zepeda">Código fuente</a>
+          </p>
         </div>
-
       </div>
       <hr />
 
@@ -83,17 +86,29 @@ const Experience = () => {
               </p>
             </strong>
             <p className="mt-2">Producto desarrollado:</p>
-            <ul>
-              <li>Aplicación web: </li>
-              <ul>
-                <li>Descripción: La aplicación permite a los gerentes y supervisores 3hermanos evaluar aspectos tales como limpieza y orden de los productos.
-                  Cada reporte es apoyado con evidencia fotográfica y firma digital del evaluador.
-                </li>
-                <li>Tecnologías: Ionic v3, MongoDB, ExpressJS, NodeJS</li>
-              </ul>
-            </ul>
-
           </div>
+        </div>
+        <ul>
+          <li>Aplicación web: </li>
+          <ul>
+            <li>Descripción: La aplicación permite la creación y exportación de cotizaciones de mobiliario realizadas con los materiales que se tengan registrados en la aplicación.
+                </li>
+            <li>Tecnologías: React JS, MongoDB, ExpressJS, NodeJS</li>
+          </ul>
+        </ul>
+        <div className="row">
+          <div className="col-md-6 col-xs-12">
+            <img src={pc} width="100%" height="270" />
+          </div>
+          <div className="col-md-6">
+            <img src={pc} width="100%" height="270" />
+          </div>
+        </div>
+        <div className="text-right mt-2">
+          <p>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="32" height="32" />
+            <a target="_blank" href="https://github.com/angel-zepeda">Código fuente</a>
+          </p>
         </div>
       </div>
 
@@ -111,15 +126,28 @@ const Experience = () => {
               </p>
             </strong>
             <p className="mt-2">Producto desarrollado:</p>
+          </div>
+          <ul>
+            <li>Aplicación web: </li>
             <ul>
-              <li>Aplicación móvil: </li>
-              <ul>
-                <li>Descripción: La aplicación permite a los gerentes y supervisores 3hermanos evaluar aspectos tales como limpieza y orden de los productos.
-                  Cada reporte es apoyado con evidencia fotográfica y firma digital del evaluador.
+              <li>Descripción: La aplicación permite al director gral. revisar y consultar los reportes realizados, pueden ser ordenados por fecha y generar un PDF para su envio por correo.
                 </li>
-                <li>Tecnologías: Ionic v3, Ruby on Rails, PostgreSQL</li>
-              </ul>
+              <li>Tecnologías: React JS, MongoDB, ExpressJS, NodeJS</li>
             </ul>
+          </ul>
+          <div className="row">
+            <div className="col-md-6 col-xs-12">
+              <img src={pc} width="100%" height="270" />
+            </div>
+            <div className="col-md-6">
+              <img src={pc} width="100%" height="270" />
+            </div>
+          </div>
+          <div className="text-right mt-2">
+            <p>
+              <img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="32" height="32" />
+              <a target="_blank" href="https://github.com/angel-zepeda">Código fuente</a>
+            </p>
           </div>
         </div>
       </div>
@@ -148,6 +176,18 @@ const Experience = () => {
               </ul>
             </ul>
           </div>
+          <div className="row">
+            <div className="col-md-4">
+              <img src={phone} width="256" height="256" />
+            </div>
+            <div className="col-md-4">
+              <img src={phone} width="256" height="256" />
+            </div>
+            <div className="col-md-4">
+              <img src={phone} width="256" height="256" />
+            </div>
+          </div>
+
         </div>
       </div>
       <hr />
@@ -161,23 +201,30 @@ const Experience = () => {
           <div className="mt-3">
             <strong>
               <p>
-                Aplicación móvil y aplicación web que permite a la empresa evaluar aspecto y llevar el control de todas las sucursales en la República.
+                Aplicación
               </p>
             </strong>
             <p className="mt-2">Producto desarrollado:</p>
             <ul>
-              <li>Aplicación móvil: </li>
+              <li>Aplicación: </li>
               <ul>
-                <li>Descripción: La aplicación permite a los gerentes y supervisores 3hermanos evaluar aspectos tales como limpieza y orden de los productos.
-                  Cada reporte es apoyado con evidencia fotográfica y firma digital del evaluador.
+                <li>Descripción:
                 </li>
-                <li>Tecnologías: Ionic v3, Ruby on Rails, PostgreSQL</li>
+                <li>Tecnologías: Dialogflow API v2, Jquery, Html, Css, JS</li>
               </ul>
             </ul>
           </div>
+          <div className="row text-center">
+            <div className="col-md-6">
+              <img src={chat1} width="100%" height="256" />
+            </div>
+            <div className="col-md-4 ml-3">
+              <img src={chat2} width="100%" height="400" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
