@@ -26,15 +26,14 @@ const Banner = () => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundBlendMode: 'darken',
-        backgroundColor: 'rgba(0,0,0,0.4)'
+
       }}
     >
       <div
         style={{ position: 'fixed', zIndex: '100' }}
         className="col-md-12 p-4 text-white" id="nav">
-        <div className="container">
-          <div className="row">
+        <div className="container ">
+          <div className="row ">
             <span>Angel Zepeda</span>
             <span className="ml-3">Software</span>
             <span className="ml-3">Github</span>
@@ -49,8 +48,8 @@ const Banner = () => {
           top: '37%',
         }}
         className="col-md-12 text-center">
-        <h1 style={{ fontSize: '4.2em', letterSpacing: '20px' }} className="text-white col-md-12">ANGEL ZEPEDA</h1>
-        <h4 className="text-white">Ingeniero en computación, entusiasta por el software y desarrollo web</h4>
+        <h1 style={{ fontSize: '4.2em', letterSpacing: '20px' }} className="text-dark col-md-12 ">ANGEL ZEPEDA</h1>
+        <h4 className="text-dark">Ingeniero en computación, entusiasta por el software y desarrollo web</h4>
       </div>
 
       {/* <div

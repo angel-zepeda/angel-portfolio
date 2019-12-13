@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills';
 
 const About = () => {
   return (
@@ -15,8 +16,7 @@ const About = () => {
         <hr />
         <h4>Siempre he buscado nuevos desafíos que sean significativos para mi. Como desarrollador web disfruto de tener la posibilidad de cambiar el mundo, poder apreciar todo el conocimiento nuevo que se obtiene día a día y generar beneficios de gran impacto a empresas de alto crecimiento.</h4>
       </div>
-      <hr />
-      <h3>Enfoque actual: <span className="text-primary">MERN Stack, Ruby on Rails, Linux</span></h3>
+      <Skills />
     </div>
   );
 }

@@ -10,3 +10,11 @@ code {
 .banner-font {
   font-family: 'Quicksand', sans-serif;
 }
+
+.img-project {
+ transition: transform .5s;
+}
+.img-project:hover {
+  transform: scale(1.09);
+ 
+}
