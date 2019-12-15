@@ -8,8 +8,8 @@ const Skills = () => {
         <strong>Habilidades</strong>
       </h1>
 
-      <div className="card p-3">
-        <div className="row mx-auto">
+      <div className="p-3">
+        <div className="mx-auto row">
           <SkillIcon skill={"node"} starC={[1, 1, 1]} />
           <SkillIcon skill={"react"} starC={[1, 1, 1, 1]} />
           <SkillIcon skill={"express"} starC={[1, 1, 1, 1]} />

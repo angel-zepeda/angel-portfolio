@@ -16,5 +16,10 @@ code {
 }
 .img-project:hover {
   transform: scale(1.09);
- 
+}
+@media only screen and (max-width: 600px) {
+  .img-project img{
+    height: 100%;
+    
+  }
 }
