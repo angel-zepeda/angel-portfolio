@@ -32,7 +32,7 @@ const Banner = () => {
       <div
         style={{ position: 'fixed', zIndex: '100' }}
         className="col-md-12 p-4 text-white" id="nav">
-        <div className="container-fluid ">
+        <div className="container">
           <div className="row ">
             <span>Angel Zepeda</span>
             <span className="ml-3">Software</span>

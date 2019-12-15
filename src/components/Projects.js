@@ -1,45 +1,49 @@
 import React from 'react';
 
-const Projects = ({ brand, bussiness, title, movil, web, github, imgSize, screenshots, phone }) => {
+const Projects = ({ brand, bussiness, title, movil, web, github, imgSize, screenshots, phone, job }) => {
   return (
     <div className="p-3">
       <div className="col-md-12">
         <div className="row">
           {brand ? <img src={brand} width={imgSize ? imgSize.width : "64"} height={imgSize ? imgSize.height : "64"} alt="brand" /> : null}
           <h2 className="mt-2 ml-3 mr-2 text-dark">{bussiness} - </h2>
-          <h3 className="mt-2 ">Full-stack software developer</h3>
+          <h3 className="mt-2 ">{job}</h3>
         </div>
         <div className="mt-3">
-          <strong><p>{title}</p></strong>
-          <p className="mt-2">Producto desarrollado:</p>
+          <div className="bg-secondary p-2 mb-2">
+            <p className="text-secondary">{title}</p>
+          </div>
           {
             movil ?
               <div>
-                <ul>
-                  <li>Aplicación móvil: </li>
-                  <ul>
-                    <li>Descripción: {movil.description}</li>
-                    <li className="text-primary">Tecnologías: <strong >{movil.technologies}</strong></li>
-                  </ul>
-                </ul>
-                <div className="row">
-                </div>
+                <p>
+                  <strong className="text-success">
+                    Aplicación móvil:
+                  </strong>
+                </p>
+                <p>
+                  <strong>Descripción: </strong>{movil.description}
+                </p>
+                <p>
+                  <strong className="text-primary">Tecnologías: </strong >{movil.technologies}
+                </p>
+                <hr />
               </div>
               : null
           }
           {
             web ?
               <div>
-                <ul>
-                  <li>Aplicación web: </li>
-                  <ul>
-                    <li>Descripción: {web.description}</li>
-                    <li className="text-primary">Tecnologías:  <strong>{web.technologies}</strong></li>
-                  </ul>
-                </ul>
-                <div className="row">
+                <p>
+                  <strong className="text-warning">Aplicación web: </strong>
+                </p>
+                <p>
+                  <strong>Descripción: </strong>{web.description}
+                </p>
+                <p>
+                  <strong className="text-primary">Tecnologías:  </strong>{web.technologies}
+                </p>
 
-                </div>
               </div>
               : null
           }
