@@ -3,7 +3,7 @@ import Projects from './Projects';
 
 const Experience = () => {
   return (
-    <div className="container mt-5" id="software">
+    <div className="container-fluid mt-5" id="software">
       <h1 style={{ borderLeft: '5px solid orange' }} className="pl-2">
         <strong>Experiencia</strong>
       </h1>

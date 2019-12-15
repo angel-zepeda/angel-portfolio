@@ -67,7 +67,7 @@ const Projects = ({ brand, bussiness, title, movil, web, github, imgSize, screen
             {phone.map(pic => (
               <div key={pic} className="card col-md-2 mx-auto m-2 shadow img-project p-0">
                 <div className="card-body p-2 ">
-                  <img src={require("../assets/imgs/" + pic)} alt="Img demostración" className="col-md-12 m-0 p-0" height="264px" />
+                  <img src={require("../assets/imgs/" + pic)} alt="Img demostración" className="col-md-12 m-0 p-0" height="415px" />
                 </div>
               </div>
             ))}
