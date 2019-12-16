@@ -1,12 +1,12 @@
 import React from 'react';
 const Photo = () => {
   return (
-    <div className="text-center mt-4">
+    <div className="text-left mt-4">
       <span>
         <img
           alt="Angel Zepeda"
           className="p-1"
-          src={require('../assets/imgs/me.jpeg')} width="240px" height="240px"
+          src={require('../assets/imgs/me.jpeg')} width="260px" height="280px"
           style={{
             borderRadius: "50%",
             border: "3px solid gray"
