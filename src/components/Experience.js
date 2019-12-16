@@ -22,7 +22,10 @@ const Experience = () => {
           description: "La aplicación permite al director gral. revisar y consultar los reportes realizados, pueden ser ordenados por fecha y generar un PDF para su envio por correo.",
           technologies: "React JS, MongoDB, ExpressJS, NodeJS"
         }}
-        github="angel-zepeda"
+        github={{
+          client: "angel-zepeda/3HermanosIonic",
+          api: "angel-zepeda/3hNodeAPI"
+        }}
       />
       <hr />
       <Projects
@@ -35,19 +38,25 @@ const Experience = () => {
           description: "La aplicación permite la creación y exportación de cotizaciones de mobiliario realizadas con los materiales que se tengan registrados en la aplicación.",
           technologies: "React JS, MongoDB, ExpressJS, NodeJS"
         }}
-        github="angel-zepeda"
+        github={{
+          client: "angel-zepeda/gc_client",
+          api: "angel-zepeda/gc_api"
+        }}
       />
       <hr />
       <Projects
         job="Full-stack software developer"
         screenshots={["issste_cap.png", "issste_cap2.png", "issste_cap3.png"]}
         bussiness="Cumplimientos y sentencias ISSSTE"
-        title=""
+        title="Aplicación web para la digitalización y control de información sobre los pensionados de la delegación Poniente CDMX"
         web={{
-          description: "",
+          description: "Aplicación web que permite almacenar los expedientes de manera digital, complementando el registro con información del pensionadao tales como (número de pensión, tipo de expediente, nombre de pensionado), ademas de poder exportar la información a un formato XLSX.",
           technologies: "React JS, MongoDB, ExpressJS, NodeJS"
         }}
-        github="angel-zepeda"
+        github={{
+          client: "angel-zepeda/isss_client",
+          api: "angel-zepeda/isss_api"
+        }}
       />
       <hr />
       <Projects
@@ -56,12 +65,15 @@ const Experience = () => {
         imgSize={{ width: "140", height: "45" }}
         brand="data:image/png;base64,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"
         bussiness="CITNOVA"
-        title=""
+        title="Aplicación móvil para la gestión de quejas, sugerencias y aclaraciones realizadas al Instituto CITNOVA."
         web={{
-          description: "",
+          description: "La aplicación móvil permite a los usuarios de CITNOVA poder realizar quejas y sugerencias acerca de alguna de las áreas con las que cuenta el instituto, las aclaraciones serán respondidas por el supervisor de cada área del lugar.",
           technologies: "Ruby on Rails, Ionic v3, PostgreSQL"
         }}
-        github="angel-zepeda"
+        github={{
+          client: "angel-zepeda/citnova_mob_app",
+          api: "angel-zepeda/citnova_api"
+        }}
       />
       <hr />
       <Projects
@@ -70,12 +82,11 @@ const Experience = () => {
         imgSize={{ width: "128", height: "50" }}
         brand="https://ixmi.mx/img/ixmi.png"
         bussiness="Ixmi.mx"
-        title=""
+        title="Asistente virtual para aclaración de dudas acerca de los parques o balnearios de Ixmiquilpan Hgo."
         web={{
-          description: "",
+          description: "El asistente virtual 'ASPI' es capaz de contestar una gran cantidad de preguntas en relación a cada uno de los parques de ixmiquilpan. Gracias a este servicio los visitantes pueden tener información relevante para saber y conocer todos los parques. ",
           technologies: "Dialogflow API v2, Jquery, Html, Css, JS"
         }}
-        github="angel-zepeda"
       />
     </div>
   );

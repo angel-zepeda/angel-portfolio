@@ -1,12 +1,17 @@
 import React from 'react';
-// import $ from "jquery";
+import $ from "jquery";
 
 const Banner = () => {
 
-  // const expandMore = e => {
-  //   e.preventDefault();
-  //   $("html, body").animate({ scrollTop: ($("#about-me").offset().top) }, 1000);
-  // }
+  const expandMore = e => {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: ($("#software").offset().top - 100) + 'px' }, 1000);
+  }
+
+  const about = e => {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: ($("#about-me").offset().top - 100) + 'px' }, 1000);
+  }
 
   window.onscroll = () => {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -33,11 +38,28 @@ const Banner = () => {
         style={{ position: 'fixed', zIndex: '100' }}
         className="col-md-12 p-4 text-white" id="nav">
         <div className="container">
-          <div className="row ">
-            <span>Angel Zepeda</span>
-            <span className="ml-3">Software</span>
-            <span className="ml-3">Github</span>
-            <span className="ml-3">Contacto</span>
+          <div className="row">
+            <span>
+              <button
+                className="btn btn-link text-white"
+                onClick={about}
+              >
+                Angel Zepeda
+              </button>
+
+            </span>
+            <span className="ml-3" id="experience">
+              <button
+                onClick={expandMore}
+                className="btn btn-link text-white"
+              >
+                Software
+              </button>
+            </span>
+            <span className="ml-3 btn btn-link text-white">
+              <a rel="noopener noreferrer" target="_blank" href="https://github.com/angel-zepeda">Github</a>
+            </span>
+
           </div>
         </div>
       </div>

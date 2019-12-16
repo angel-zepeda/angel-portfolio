@@ -79,13 +79,22 @@ const Projects = ({ brand, bussiness, title, movil, web, github, imgSize, screen
           : null
       }
 
+      {
+        github ?
 
-      <div className="text-right mt-2">
-        <p>
-          <img alt="github" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="32" height="32" />
-          <a rel="noopener noreferrer" target="_blank" href={`https://github.com/${github}`}>Código fuente</a>
-        </p>
-      </div>
+          <div className="text-primary mt-2 row">
+            <span className="mr-2">
+              <img alt="github" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="18" height="18" />
+              <a rel="noopener noreferrer" target="_blank" href={`https://github.com/${github.client}`}>Cliente: Código fuente</a>
+            </span>
+            <span>
+              <img alt="github" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="18" height="18" />
+              <a rel="noopener noreferrer" target="_blank" href={`https://github.com/${github.api}`}>API: Código fuente</a>
+            </span>
+          </div>
+          : null
+      }
+
     </div >
   );
 }

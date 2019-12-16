@@ -4,6 +4,9 @@ body {
   text-align: justify;
 }
 
+a,a:visited {
+  color: inherit;
+}
 .banner-font {
   font-family: 'Quicksand', sans-serif;
 }
