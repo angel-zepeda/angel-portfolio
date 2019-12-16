@@ -3,9 +3,9 @@ import SkillIcon from './SkillIcon';
 
 const Skills = () => {
   return (
-    <div>
+    <div className="mt-4">
       <h1>
-        <strong className="badge badge-pill badge-danger mt-4">Habilidades</strong>
+        <strong className="card col-md-2">Habilidades</strong>
       </h1>
 
       <div className="col-md-7 mx-auto">
@@ -20,6 +20,7 @@ const Skills = () => {
         </div>
 
       </div>
+      <hr />
     </div>
 
   );

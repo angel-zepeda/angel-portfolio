@@ -3,9 +3,9 @@ import Projects from './Projects';
 
 const Experience = () => {
   return (
-    <div className="container-fluid mt-5" id="software">
+    <div className="container-fluid " id="software">
       <h1 >
-        <strong className="badge badge-pill badge-warning">Experiencia</strong>
+        <strong className="card col-md-2">Experiencia</strong>
       </h1>
       <Projects
         job="Full-stack software developer"

@@ -41,7 +41,7 @@ const Banner = () => {
           <div className="row">
             <span>
               <button
-                className="btn btn-link text-white"
+                className="btn btn-link text-white p-0"
                 onClick={about}
               >
                 Angel Zepeda
@@ -51,12 +51,12 @@ const Banner = () => {
             <span className="ml-3" id="experience">
               <button
                 onClick={expandMore}
-                className="btn btn-link text-white"
+                className="btn btn-link text-white p-0"
               >
                 Software
               </button>
             </span>
-            <span className="ml-3 btn btn-link text-white">
+            <span className="ml-3 btn btn-link text-white p-0">
               <a rel="noopener noreferrer" target="_blank" href="https://github.com/angel-zepeda">Github</a>
             </span>
 
