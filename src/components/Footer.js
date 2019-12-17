@@ -12,7 +12,7 @@ const Footer = () => {
             <h5 className="text-uppercase font-weight-bold">Contacto</h5>
             <ul style={{ listStyle: 'none' }}>
               <li>Tel: (+52) 55 60-40-18-30</li>
-              <li>Email: angel.zepepeda0508@gmail.com</li>
+              <li>Email: angel.zepeda0508@gmail.com</li>
               <li>Github: github.com/angel-zepeda</li>
             </ul>
           </div>
